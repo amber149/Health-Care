@@ -36,8 +36,14 @@
   }
 
   .card-parent {
-    /*display:flex;*/
+    display: flex;
     margin: 25px
+  }
+
+  .intro {
+    text-align: justify;
+    margin: 50px;
+    padding: 20px;
   }
 
   .card {
@@ -60,12 +66,10 @@
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: end;">
 
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: end;">
 
       <form class="form-inline my-2 my-lg-0">
-
         <input class="form-control mr-sm-2" type="search" placeholder="Enter City Name" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search Our Center</button>
       </form>
@@ -103,8 +107,8 @@
                 </div>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="Department.html" id="navbarDropdown" role="button"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
                   Departments
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -126,76 +130,55 @@
         </nav>
       </div>
 
-
       <div class="card-container">
-        <h1 class="display-4">Departments</h1>
+        <h1 class="display-4">laboratories</h1>
 
-        <div class="card-parent">
-          <div class="card">
-            <div class="card-body" name="hematology">
-              <a name="hematology"></a>
-              <h5 class="card-title">HEMATOLOGY</h5>
-              <p class="card-text">Hematology is the study of blood, blood morphology and blood diseases. Hematologists
-                count and classify blood cells into different categories. Coagulation is the study of the clotting
-                activity of blood.</p>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="https://source.unsplash.com/1600x500/?clinic,laboratories,%20chemistry"
+                alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://source.unsplash.com/1600x500/?clinical" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://source.unsplash.com/1600x500/?chemicals" alt="Third slide">
             </div>
           </div>
-          <div class="card">
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
 
-            <div class="card-body" name="chemistry">
-              <a name="chemistry"></a>
-              <h5 class="card-title">CHEMISTRY</h5>
-              <p class="card-text">Chemistry performs a wide variety of tests using the most current technology. It is
-                defined as the scientific study of matter and the various compounds of the elements as it relates to the
-                human body. Common tests analyzed in the chemistry laboratory are glucose, cholesterol, BUN, creatinine,
-                potassium, liver and heart enzymes, thyroid tests and hormone tests, and PSA.</p>
-            </div>
-          </div>
-          <div class="card">
+        <div class="intro">
+          <h2> Welcome to Team 3 Diagnostics</h2>
+          <p style="font-size: 17px">
+            From analysis to result. From science to sensitivity.
 
-            <div class="card-body" name="cytology">
-              <a name="cytology"></a>
-              <h5 class="card-title">CYTOLOGY</h5>
-              <p class="card-text">In cytology, a skilled cytotechnologist examines human cells under the microscope,
-                looking for early signs of cancer and other diseases. The most common type of specimen processed in the
-                Cytology department is the Pap smear. Chemistry performs a wide variety of tests using the most current
-                technology. It is defined as the scientific study of matter and the various compounds of the elements as
-                it relates to the human body. Common tests analyzed in the chemistry laboratory are glucose,
-                cholesterol, BUN, creatinine, potassium, liver and heart enzymes, thyroid tests and hormone tests, and
-                PSA.Chemistry performs a wide variety of tests using the most current technology. It is defined as the
-                scientific study of matter and the various compounds of the elements as it relates to the human body.
-                Common tests analyzed in the chemistry laboratory are glucose, cholesterol, BUN, creatinine, potassium,
-                liver and heart enzymes, thyroid tests and hormone tests, and PSA.Chemistry performs a wide variety of
-                tests using the most current technology. It is defined as the scientific study of matter and the various
-                compounds of the elements as it relates to the human body. Common tests analyzed in the chemistry
-                laboratory are glucose, cholesterol, BUN, creatinine, potassium, liver and heart enzymes, thyroid tests
-                and hormone tests, and PSA.Chemistry performs a wide variety of tests using the most current technology.
-                It is defined as the scientific study of matter and the various compounds of the elements as it relates
-                to the human body. Common tests analyzed in the chemistry laboratory are glucose, cholesterol, BUN,
-                creatinine, potassium, liver and heart enzymes, thyroid tests and hormone tests, and PSA.</p>
-            </div>
-          </div>
+            High quality diagnostics are an imperative for better treatment and patient care. Team 3 Hospitals Group,
+            India’s leading healthcare system, has thus far been delivering 3.5 million high-quality diagnostic tests
+            every year, through its Hospitals and Clinics earning an ‘excellent’ rating from 95% of its patients.
 
-          <div class="card">
+            Team 3 Diagnostics is the result of the ‘good health for all’ mission that is spurring the Team 3 Hospitals
+            Group to touch a billion lives. Following the corporate credo of bringing quality, affordable healthcare
+            closer to the consumer, 2015 saw 100+ Team 3 Diagnostics centres, in 2016 it has been grown to 150+ centres
+            and 2017 landed with 250 + collection centres , 70+ Labs springing up in neighbourhoods across India,
+            delivering expertise that is empowering to doctors and patients alike.
 
-            <div class="card-body" name="surgical">
-              <a name="surgical"></a>
-              <h5 class="card-title">SURGICAL PATHOLOGY</h5>
-              <p class="card-text">Pathology is the branch of medicine, which treats the essential nature of disease,
-                especially the structural and functional changes in tissues and organs of the body, which cause or are
-                caused by disease.</p>
-            </div>
-          </div>
-          <div class="card" name="immunology">
-            <a name="immunology"></a>
-
-            <div class="card-body">
-              <h5 class="card-title">IMMUNOLOGY</h5>
-              <p class="card-text"> Immunology is the study of immune products such as antibodies produced by the body
-                in response to foreign material.</p>
-            </div>
-          </div>
-
+            Team 3 Diagnostics’ expert technicians and state-of-the-art diagnostic equipment are constantly guided by
+            Team 3’s 36-years legacy of excellence to ensure the accuracy and timeliness of test results.
+          </p>
         </div>
 
 

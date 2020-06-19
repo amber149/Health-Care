@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://www.w3schools.com/lib/w3-theme-black.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto"
+  />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+  <style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Roboto", sans-serif;
+    }
+    .w3-sidebar {
+      z-index: 3;
+      width: 250px;
+      top: 43px;
+      bottom: 0;
+      height: inherit;
+    }
+    
+      .report-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+      
+  </style>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="./laboratorist.html">LABORATORIST</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Enter City Name" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search Our Center</button>
+        </form>
+      </div>
+    </nav>
+
+   
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div
+      class="w3-overlay w3-hide-large"
+      onclick="w3_close()"
+      style="cursor: pointer;"
+      title="close side menu"
+      id="myOverlay"
+    ></div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" >
+      <div class="w3-row">
+        <div class="w3-twothird w3-container">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+               
+              
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    For Patient
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href='./TestBooking.html'>Test Booking</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./Report.html">Reports</a>
+                      
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="./Department.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Departments
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./Department.html#hematology">Hematology</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./Department.html#chemistry">Chemistry</a>
+                      <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./Department.html#cytology">Cytology</a>
+                      <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./Department.html#surgical">Surgical Pathology</a>
+                     <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./Department.html#immunology">Immunology</a>
+                  </div>
+                </li>
+               
+              </ul>
+             
+            </div>
+          </nav>
+        </div>
+      </div>
+
+         <div class="report-container">
+           <h1 class="display-4">Report</h1>
+
+          <div class="form-group">
+            <label for="inputAddress">Date</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Enter Date in format dd/mm/yy">
+          </div>
+        <div class="form-group">
+            <label for="inputAddress">Name of Patient</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="patient name">
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">S.No.</th>
+                <th scope="col">Test Name</th>
+                <th scope="col">Test Date</th>
+                  <th scope="col">Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Covid-19</td>
+                <td>20/06/2020</td>
+                <td>POSITIVE/NEGATIVE</td>
+               
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>DIABETES</td>
+                <td>20/06/2020</td>
+                  <td>POSITIVE/NEGATIVE</td>
+               
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>---</td>
+                <td>---</td>
+                 <td> POSITIVE/NEGATIVE</td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      <!--
+ Pagination -->
+  
+   
+
+      <!-- END MAIN -->
+    </div>
+
+    <script>
+      // Get the Sidebar
+      var mySidebar = document.getElementById("mySidebar");
+
+      // Get the DIV with overlay effect
+      var overlayBg = document.getElementById("myOverlay");
+
+      // Toggle between showing and hiding the sidebar, and add overlay effect
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+          overlayBg.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+          overlayBg.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+        overlayBg.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
